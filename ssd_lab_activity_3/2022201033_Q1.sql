@@ -1,0 +1,1 @@
+select Fname,Minit,Lname, Ssn,Dname,Dnumber  from EMPLOYEE, DEPARTMENT, WORKS_ON  where EMPLOYEE.Ssn=DEPARTMENT.Mgr_ssn and EMPLOYEE.Ssn=WORKS_ON.Essn and WORKS_ON.Hours<40 GROUP BY Fname,Minit,Lname, Ssn,Dname,Dnumber;
