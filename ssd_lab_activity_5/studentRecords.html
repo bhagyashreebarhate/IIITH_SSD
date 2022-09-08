@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    RollNo: <input type="text" id="rollinput"> Student name: <input type="text" id="nameinput">
+    </br>
+    </br>
+    <button onclick="addentry()" class="buttonbackground">Add New</button>
+    <button onclick="deleteentry()" class="buttonbackgroundred">Delete Last Record</button>
+    </br>
+    </br>
+
+    <table id="myTable">
+        <tr>
+            <td class="headingback">Roll No</td>
+            <td class="headingback">Name</td>
+        </tr>
+        <tr>
+            <td id="roll"></td>
+            <td id="name"></td>
+        </tr>
+    </table>
+    <p id="demo"></p>
+
+    <script>
+        function addentry() {
+            var x = document.getElementById("rollinput").value;
+            document.getElementById("roll").innerHTML = x;
+            var x = document.getElementById("nameinput").value;
+            document.getElementById("name").innerHTML = x;
+        }
+
+        function deleteentry() {
+
+            document.getElementById("roll").innerHTML = " ";
+
+            document.getElementById("name").innerHTML = " ";
+        }
+    </script>
+
+</body>
+
+</html>
