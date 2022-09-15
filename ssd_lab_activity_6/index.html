@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<script src="script.js"></script>
+
+<body>
+
+    <h1>Team Form</h1>
+
+    <form id="myForm" onsubmit="todisplayonSubmit(event)">
+        <label>Manager Name</label>
+        <input type="text" id="mangername" name="mangername" required><br><br>
+
+        <label>Group Email </label>
+        <input type="email" id="GroupEmail" name="GroupEmail" required><br><br>
+
+        <label>Server Username </label>
+        <input type="text" id="ServerUsername " name="ServerUsername" required onkeyup="usernamecheck();"><br><br>
+
+        <label>Server Password</label>
+        <input type="password" id="ServerPassword" name="ServerPassword" required><br><br>
+
+        <label>Confirm Password</label>
+        <input type="password" id="ConfirmPassword" name="ConfirmPassword" required onblur="confirmpasscheck();"><br><br>
+
+        <div class="dropdown">
+            <label>Team Lead</label>
+            <select name="teamlead" id="teamlead">
+    <option value="bhagya">Bhagya</option>
+    <option value="anshita">Anshita</option>
+    <option value="nayan">Nayan</option>
+    <option value="khemraj">Khemraj</option>
+  </select>
+            <br><br>
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>
